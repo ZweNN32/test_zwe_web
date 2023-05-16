@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Novel-World </title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style3.css') }}">
+</head>
+<body>
+	<header>
+		<a href="{{ url_for('views.home') }}"><img src="{{ url_for('static', filename='images/logo1.png') }}" alt="Photo"></a>
+		<h1>Home</h1>
+		<nav>
+			<ul>
+				<li><a href="{{ url_for('views.home') }}">Home</a></li>
+				<li><a href="{{ url_for('views.writer') }}">Writer</a></li>
+				<li><a href="{{ url_for('views.contact') }}">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="container">
+		<div class="story">
+			<h2>The Stranger</h2>
+			<p>"She and I were strangers. One summer day while my friends and I were sitting in a restaurant, I 
+                saw a stranger. A stranger that I didn't know I would have fallen for, a stranger that would make 
+                me feel the butterflies, a stranger that would make me smile, and a stranger that would make 
+                me cry."</p>
+			<a href="{{ url_for('views.stranger') }}" class="button">Read More</a>
+		</div>
+		
+		<div class="story">
+			<h2>On A Mirror</h2>
+			<p>"As a young boy, I felt the pain,<br>The sorrows that I have gained.<br>But I also smiled like a child,<br>Feeling the thrills and joys of life. 
+				"</p>
+			<a href="{{ url_for('views.oamirror') }}" class="button">Read More</a>
+		</div>
+		
+		<div class="story">
+			<h2>Alive</h2>
+			<p> I want to be alive, truly alive,<br>Not just the kind of life, that I breathe to survive<br> A life of happiness and thrive<br>Where I can be everything that I decide<br><br>
+			</p>
+			<a href="{{ url_for('views.alive') }}" class="button">Read More</a>
+		</div>
+		<div class="story">
+			<h2>I ponder</h2>
+			<p lang="my" >"ကျွန်တော်တိုလူမျိုးမှာအယူတစ်ခုရှိတယ်။ကျွန်တော်တိုနောင်တတရားတွေနဲ့သေဆုံးသွားရတဲ့အခါ သို အရာဝတ္ထုတစ်ခုခုကိုစွဲလမ်းမိပြီး လုပ်စရာကိစ္စတစ်ခုခုကိုပြီးပြတ်အောင်အဆုံးမသတ်နိုင်ခဲ့ရင် နောက်ဘဝမကူးနိုင်ဘဲ ဝိဉာဉ်တစ်ကောင်အဖြစ်ကျင်လည်နေရတတ်တယ်တဲ့။"</p>
+			
+			<a href="{{ url_for('views.iponder') }}" class="button">Read More</a>
+		</div>
+		<div class="story">
+			<h2>Who Would Have Thought</h2>
+			<p lang="my" >"ဒီလို နေ့မျိုး ရောက်လာမယ်လိုဘယ်သူက ထင်ခဲ့မှာလဲ။ကျွန်တော်က‌တော့ မထင်ခဲ့မိဘူးဗျာ။2018 ခုနှစ်ဧပြီလအနှောင်းပိုင်း၊ ဆယ်တန်းဘော်ဒါ သွားတက်မယ့်ကောင်မလေးတစ်ယောက်‌ကပေါ့။ သူ့ကိုကျွန်တော်မချစ်တော့မှာဆိုးလို့ဆိုပြီးငိုတယ်။သူ့ကို ကျွန်တော်မေ့သွားမှာအရမ်းစိုးရိမ်တယ်။ကျွန်တော်နဲ့ထပ်မတွေ့ရမှာကိုသူအရမ်းကြောက်တာပဲတယ့်။"</p>
+			
+			<a href="{{ url_for('views.whowht') }}" class="button">Read More</a>
+		</div>
+	</div>
+	<footer>
+		&copy; 2023 My Website
+	</footer>
+</body>
+</html>

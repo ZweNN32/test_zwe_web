@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <meta charset="UTF-8">
+    <title>Novel-World - Contact Me</title> 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style3.css') }}">
+  </head>
+  <body>
+    <header>
+      <a href="{{ url_for('views.home') }}"><img src="{{ url_for('static', filename='images/logo1.png') }}" alt="Photo"></a>
+      <h1>Contact Me</h1>
+      <nav>
+        <ul>
+          <li><a href="{{ url_for('views.home') }}">Home</a></li>
+          <li><a href="{{ url_for('views.writer') }}">Writer</a></li>
+          <li><a href="{{ url_for('views.contact') }}">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <h1>Get in Touch</h1>
+      <div class="story">
+        <h3>Phone</h3>
+        <a class="con" href="tel:+66949875707">(+66)949875707</a>
+        <h3>Mail</h3>
+        <a class="con" href="mailto:zwenyinaing19@gmail.com">zwenyinaing19@gmail.com</a>     
+        <div>
+          <h3>Location</h3>
+        </div>
+        <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+          <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+          <script>
+            (function () {
+              var setting = {"height":500,"width":800,"zoom":18,"queryString":"Regent Home Sukhumvit 97/1, Sukhumvit 97/1 Alley, Bang Chak, Phra Khanong, Bangkok, Thailand","place_id":"ChIJAZ4p1g6f4jARmULtTTOiIZE","satellite":false,"centerCoord":[13.698961753870897,100.61435749999998],"cid":"0x9121a2334ded4299","lang":"en","cityUrl":"/thailand/bangkok","cityAnchorText":"Map of Bangkok, North-Eastern Thailand, Thailand","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"914243"};
+              var d = document;
+              var s = d.createElement('script');
+              s.src = 'https://1map.com/js/script-for-user.js?embed_id=914243';
+              s.async = true;
+              s.onload = function (e) {
+                window.OneMap.initMap(setting)
+              };
+              var to = d.getElementsByTagName('script')[0];
+              to.parentNode.insertBefore(s, to);
+            })();
+          </script>
+          <a href="https://1map.com/map-embed">1 Map</a>
+        </div>   
+      </div>
+      <div class="socialmedia">
+        <a href="https://www.facebook.com/zwenyinaing.zwenyinaing"><img img src="{{ url_for('static', filename='images/fb.png') }}" alt="facebook logo" class="imgcss"></a>
+        <a href="https://twitter.com/i/flow/login"><img img src="{{ url_for('static', filename='images/tt.png') }}"  alt="twitter logo" class="imgcss"></a>
+        <a href="https://www.instagram.com/zwe_nyi_naing32/"><img img src="{{ url_for('static', filename='images/ig.png') }}"  alt="instagram logo" class="imgcss"></a>
+        </div>
+    </div> 
+      <footer>
+          &copy; 2023 My Website
+      </footer>
+  </body>
+</html>

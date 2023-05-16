@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Novel-World - Writers</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style3.css') }}">
+</head>
+<body>
+	<header>
+		<a href="{{ url_for('views.home') }}" title="Visit Homepage"><img src="{{ url_for('static', filename='images/logo1.png') }}" alt="Photo"></a>
+		<h1>Writer</h1>
+        <nav>
+            <ul>
+				<li><a href="{{ url_for('views.home') }}">Home</a></li>
+				<li><a href="{{ url_for('views.writer') }}">Writer</a></li>
+				<li><a href="{{ url_for('views.contact') }}">Contact</a></li>
+			</ul>
+          </nav>
+	</header>
+	<div class="container">
+		<div class="story">
+			<h2>Zwe Nyi Naing</h2>
+            <p>Zwe's a young male writer, who mainly writes stories and novels that depict  sadness , sorrow and lonliness</p>
+		
+			
+			<a href="{{ url_for('views.zwe') }}" class="button">More by Zwe</a>
+		</div>
+		<div class="story">
+			<h2>Nyi Nyi</h2>
+            <p>Nyi Nyi's a young male writer who mainly write romance and slice of life novels.</p>
+			<a  href="{{ url_for('views.zwe') }}" class="button"> More by Nyi Nyi</a>
+		</div>
+        <div class="story">
+			<h2>Kyi</h2>
+            <p>Kyi's a young female writer who mainly write comedic and thriller novels.</p>
+			<a href="{{ url_for('views.zwe') }}" class="button"> More by Kyi Kyi</a>
+		</div>
+	</div>
+	<footer>
+		&copy; 2023 My Website
+	  </footer>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Novel-World  - Alive</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style3.css') }}">
+</head>
+<body>
+	<header>
+		<a href="{{ url_for('views.home') }}"><img src="{{ url_for('static', filename='images/logo1.png') }}" alt="Photo"></a>
+		<h1>My Poems</h1>
+		<nav>
+			<ul>
+				<li><a href="{{ url_for('views.home') }}">Home</a></li>
+				<li><a href="{{ url_for('views.writer') }}">Writer</a></li>
+				<li><a href="{{ url_for('views.contact') }}">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="container">
+		<div class="story" id="Alive">
+			<h2 >Alive</h2>
+            <p >
+                <br>I want to be alive, truly alive,<br>
+                Not just the kind of life, that I breathe to survive<br>
+                A life of happiness and thrive<br>
+                Where I can be everything that I decide<br><br>
+                
+                I want to have fun,<br>
+                Ignorant of my burdens<br>
+                In my heart, it's what I truly yearn<br><br>
+                
+                I want to be surrounded by a love,<br>
+                And let it lifts me up when times are dire.<br>
+                To cultivate a relationship that lasts a lifetime,<br>
+                With the kind of person who quenches all my desires<br>
+                And willing to be a beacon of sunshine<br><br>
+                
+                I yearn to feel the pleasures of life,<br>
+                To treasure my existence and escape strife.<br>
+                To experience the moments that spark my fire,<br>
+                And elevate me to a state of transcendental desire.<br><br>
+                
+                I crave the sensations that leave me breathless,<br>
+                The ones that make my heart race and mind restless.<br>
+                To feel alive in a way that's pure and true,<br>
+                And let my soul soar to vistas anew.<br><br>
+                
+                I want it all, every pleasure and delight,<br>
+                To indulge in every whim and every appetite.<br>
+                No constraints or limits, no rules or chains,<br>
+                Just living for myself and my own gains.<br><br>
+                
+                I want to immerse myself in the beauty of the world,<br>
+                And revel in the wonders that are unfurled.<br>
+                To be present in the now and embrace the flow,<br>
+                And let my spirit be free to glow.<br><br>
+                
+                For life is more than just existing and surviving,<br>
+                It's about embracing the joys and thriving.<br>
+                And so, I choose to live each day with intent,<br>
+                Aching to savor every moment that life presents.<br><br>
+
+                I want to be truly alive<br>
+                To feel the pulse of life within my veins,<br>
+                To know that every breath I take is mine,<br>
+                And revel in the joy that it sustains.<br>
+                <br>
+                </p>
+                <div class="writer">By<a href="{{ url_for('views.zwe') }}" style="color:black;" > Zwe Nyi Naing</a></div>
+        </div> 
+        <button><a href="{{ url_for('views.home') }}">Home</a></button>
+        <form action="submit_comment.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+    
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment"></textarea><br>
+    
+            <input type="submit" value="Submit">
+        </form>
+        
+    </div>
+    <footer>
+        &copy; 2023 My Website
+      </footer>
+</body>
+</html>

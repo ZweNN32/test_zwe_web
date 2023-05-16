@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Novel-World  - On A Mirror</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style3.css') }}">
+</head>
+<body>
+	<header>
+		<a href="{{ url_for('views.home') }}"><img src="{{ url_for('static', filename='images/logo1.png') }}" alt="Photo"></a>
+		<h1>My Poems</h1>
+		<nav>
+			<ul>
+				<li><a href="{{ url_for('views.home') }}">Home</a></li>
+				<li><a href="{{ url_for('views.writer') }}">Writer</a></li>
+				<li><a href="{{ url_for('views.contact') }}">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="container">
+		<div class="story" id="on a mirror">
+			<h2 >On A Mirror</h2>
+            <p >
+                <br>As a young boy, I felt the pain,<br>
+                The sorrows that I have gained.<br>
+                But I also smiled like a child,<br>
+                Feeling the thrills and joys of life.<br>
+                <br>
+                I reveled in the pleasure and dedication,<br>
+                Endured the bits of agony and affliction.<br>
+                In the mirror, I saw myself,<br>
+                A reflection of who I was and am.<br>
+                <br>
+                But as I grew older and faced the strife,<br>
+                I learned that life is a mix of loss and life.<br>
+                Though I have lived it to the fullest,<br>
+                The precious things I lost never returned.<br>
+                <br>
+                No more sorrow, no more pain,<br>
+                No more agony or affliction, no more strain.<br>
+                Yet no joy, no thrill, no pleasure,<br>
+                No more dedication or treasure.<br>
+                <br>
+                All that's left is desolation, dejection,<br>
+                Desperation, and the weight of demotivation.<br>
+                Now, in the mirror, I see a stranger,<br>
+                Someone I didn't know, an unfamiliar danger.<br>
+                <br>
+                After he came through my soul,<br>
+                The hues of my life had already flown.<br>
+                Everything felt out of control,<br>
+                I began to feel like an error unknown.<br>
+                <br>
+                Now, I no longer want to see my reflection,<br>
+                For the stranger in the mirror shows no connection.<br>
+                The changes I've experienced, I now accept,<br>
+                And I'll continue on, until the end, with few regrets.<br>
+                <br>
+                </p>
+                <div class="writer">By<a href="{{ url_for('views.zwe') }}" style="color:black;" > Zwe Nyi Naing</a></div>
+        </div> 
+        <button ><a href="{{ url_for('views.home') }}">Home</a></button>
+        <form action="submit_comment.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+    
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment"></textarea><br>
+    
+            <input type="submit" value="Submit">
+        </form>
+        
+    </div>
+    <footer>
+        &copy; 2023 My Website
+      </footer>
+</body>
+</html>
